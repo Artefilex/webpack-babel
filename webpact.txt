@@ -9,4 +9,45 @@ webpack birçok klasörü birbirine bağlayarak tek bir dosya haline getiren bir
 # 6.  daha sonra package.jsom içerisinde webpacki çalıştırmak için scripts altına build keyi ile oluşturduk 
 # 7. nom run build ile çalıştırdık 
 # 8.bundle js oluştu  ve daha sonra istediğimiz bir html. klasöründe bunu kullanabiliriz 
- 
+# 
+# 
+#  
+#  module.exports Yöntemi Kullanımı 
+# 1. es6 ile beraber gelen yeni yöntemdir
+# module.js üzerinden exports methodunu kullanarak dışardaki dosyalarda bu methodun kullanımını sağlayabiliriz
+# module.exports = function test(){
+#        
+#  console.log("this is a test")
+# }
+# const (callback name: 'app') = require("./module.js")
+#  app() functionu cagırdık 
+#  npm run build ile bundles klasörümüzü tekrardan yeniliyoruz 
+#  eger ard arda export edilen 2 fonksiyon ve daha fazlası varsa en son fonksiyonu export ediliyoe
+#  eger tüm exportları kullanmak istiyorsak ayrı ayrı anahtar kelimeler vermemiz gerekir 
+#  module.exports.test1 gibi
+
+# her bir functionı obje olarak export edebilirz 
+
+# 
+# module.exports = {
+#     name:"baris",
+#     test1: function(){
+#         console.log("test1")
+#     },
+#     person: {
+#     name: "sedef",
+#     mail: "sedef@gmail.com"
+#     }
+# } 
+
+# modul içerisine obje şeklinde depolayarak  const moduleTest = require("./module") ile beraber cagırıp tüm methodları kullanabilriz
+
+
+# es6 ile beraber modullerimizi claslarımızı dışarıya aktarmak için export (filename)
+# ile beraber dış ortama aktarıyoruz kodlarımızı import ile kullanıma hazır import {test,Person} from "./module" 
+
+# import {test,Person} from "./module" export edilenin içerisnden test ve person aldık 
+#  export edilenlerin hepsini almak için import * as module1 from "./module"
+
+
+# default olarak bir fonksiyonu kullanmak için export default kullanırız 
