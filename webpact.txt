@@ -1,0 +1,12 @@
+webpack birçok klasörü birbirine bağlayarak tek bir dosya haline getiren bir moduldür
+
+#  webpack  kullanımı için babel üzerinden kullanım yapıcagımız için babel-loader ile indirdik 
+# 1.  npm install @babel/core @babel/polyfill @babel/preset-env babel-loader --save-dev
+# 2.  npm install webpack-cli webpack --save-dev 
+# 3.  ilk başta src diyerek dosyalarımızı oluşturduk webpacki kullanacağımız js dosyalarımızı export methodu ile yazıyoruz
+# 4.  import {export file } from "filename" ile çağırıyoruz daha sonra kullanıma hazır. 
+# 5.  daha sonra webpac.config.js dosyamızı oluşturduk 
+# 6.  daha sonra package.jsom içerisinde webpacki çalıştırmak için scripts altına build keyi ile oluşturduk 
+# 7. nom run build ile çalıştırdık 
+# 8.bundle js oluştu  ve daha sonra istediğimiz bir html. klasöründe bunu kullanabiliriz 
+ 
